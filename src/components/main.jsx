@@ -33,7 +33,7 @@ function Main({timeline}) {
             gsap.to(cursor ,{
                 x: e.clientX,
                 y: e.clientY,
-                ease: Power2.ease
+                // ease: Power2.ease
             })
 
         }
@@ -46,7 +46,7 @@ function Main({timeline}) {
 
             window.removeEventListener('mousemove', (e) => handelMouseMove(e))
         }
-    })
+    }, [])
 
     
   return (
